@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Signs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div>
+                <h1>The Zodiac</h1>
+                <p>The zodiac is composed of 12 signs. These signs are all based on constellations and you are most likely familiar with your sun sign. All 12 signs are listed as either masculine or feminine and are considered fixed, cardinal or mutable. Each sign is also representative of the four elements : fire, air, water and earth.Each sign has what is considered a planetary ruler as well. Keep this information in mind while learning more about the signs as it will help you to better understand them.</p>
+            </div>
+            
+              <!-- Icons -->
+            <div class="row-12">
+                <div class="col-4">
+                    <a onclick="getAstro('aries')"><img class="icons" src="img/icons/aries.svg"></a>
+                    <a onclick="getAstro('taurus')"><img class="icons" src="img/icons/taurus.svg"></a>
+                    <a onclick="getAstro('gemini')"><img class="icons" src="img/icons/gemini.svg"></a>
+                    <a onclick="getAstro('cancer')"><img class="icons" src="img/icons/cancer.svg"></a>
+                    <a onclick="getAstro('leo')"><img class="icons" src="img/icons/leo.svg"></a>
+                    <a onclick="getAstro('virgo')"><img class="icons" src="img/icons/virgo.svg"></a>
+                    <a onclick="getAstro('libra')"><img class="icons" src="img/icons/libra.svg"></a>
+                    <a onclick="getAstro('scorpio')"><img class="icons" src="img/icons/scorpio.svg"></a>
+                    <a onclick="getAstro('sagittarius')"><img class="icons" src="img/icons/sagittarius.svg"></a>
+                    <a onclick="getAstro('capricorn')"><img class="icons" src="img/icons/capricorn.svg"></a>
+                    <a onclick="getAstro('aquarius')"><img class="icons" src="img/icons/aquarius.svg"></a>
+                    <a onclick="getAstro('pisces')"><img class="icons" src="img/icons/pisces.svg"></a>
+                </div>
+                <div class="col-1">
+                    <a><img src=""></a>
+                </div>
+                <div class="col-2">
+                    <a><img src=""></a>
+                </div>
+            <div>
+                <h3>Sign</h3>
+                <p class="sign-title"></p>
+                <h5>Description</h5>
+                <p class="sign-description"></p>
+            </div>
+  
+            <!--Modal -->
+         
+      <!--Modal content-->
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="" class="card-link">Card link</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal footer-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>$("p").click(function(sign){
+  $(this).hide(otherSigns);
+});
+</script>
+       
+
+</body>
+
+</html>
