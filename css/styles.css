@@ -1,6 +1,50 @@
-.icons {
-    padding: 5px;
-    border: 5px;
-        
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 20px;
+    font-size: 1.1rem;
+    background-color: black;
+    color: dimgrey;
+}
+
+
+h1 {
+   font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 10px;
+    font-size: 2rem;   
+    align-content: center;
+    margin-bottom: 1px;
     
+}
+
+
+h2 {
+   font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 10px;
+    font-size: 2rem;   
+    align-content: center;
+    margin-bottom: 1px;
+}
+
+ 
+.icons {
+    border: 20px;
+    padding: 6px;
+    border: 10px; 
+    max-width: 20%;
+    margin: 5px;
+    
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    color: mediumpurple;
+    align-content: center;
+    
+}
+
+
 }
